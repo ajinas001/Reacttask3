@@ -17,20 +17,17 @@ const Main = () => {
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
-}, [])
+  }, [])
 
   useEffect(() => {
-    // Fetch data from a mock API (JSONPlaceholder in this case)
-    axios
-      .get("https://jsonplaceholder.typicode.com/posts")
+    axios.get("https://jsonplaceholder.typicode.com/posts")
       .then((response) => {
-        // For simplicity, use only the first 5 items from the API response
         setData(response.data.slice(0, 5));
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-  }, []); // Empty dependency array to run the effect only once when the component mounts
+  }, []);
 
   return (
     <div style={{ textAlign: "center" }}>
