@@ -1,0 +1,24 @@
+*.maindiv{
+  background: linear-gradient(180deg, rgba(237,239,242,1) 0%,  rgb(199, 211, 224) 44%, rgba(148,187,233,1) 100%);
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.textclass{
+  position: top;
+  align-items: center;
+  color: #8884d8;
+  font-size: 3em;
+  
+  margin-top: 1%;
+ 
+ }
+ .headertitle{
+  color: #8884d8;
+ }
+ 
