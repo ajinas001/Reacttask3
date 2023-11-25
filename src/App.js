@@ -42,7 +42,7 @@ const App = () => {
 
     
     <Navbar/>
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "left" }}>
       <h3 className="textclass" data-aos="zoom-in-up">Social Media Users and Impressions</h3>
       <div className="App">
         <PieChart width={400} height={400}>
@@ -77,17 +77,18 @@ const App = () => {
           />
           <YAxis />
           <Tooltip />
-          <Legend />
+          
           <CartesianGrid strokeDasharray="3 3" />
           <Bar dataKey="users" fill="#8884d8" background={{ fill: "#eee" }} />
         </BarChart>
+
         <LineChart
           width={500}
           height={300}
           data={data}
           margin={{
             top: 5,
-            right: 30,
+            right: 50,
             left: 80,
             bottom: 5,
           }}
@@ -99,7 +100,7 @@ const App = () => {
           />
           <YAxis />
           <Tooltip />
-          <Legend />
+         
           <CartesianGrid strokeDasharray="3 3" />
           <Line type="monotone"  dataKey="users" stroke="#8884d8" />
         </LineChart>
